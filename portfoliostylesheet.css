@@ -19,7 +19,11 @@
     text-decoration: none;
 }
 body{
-    background-color: #fff9f9eb;
+    /* background-color: #fff9f9eb; */
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+    
+
+
 }
 html{
     scroll-behavior: smooth;
@@ -83,8 +87,9 @@ nav ul li a:hover{
     display: flex;
 }
 .box1{
-    margin-top:  250px;
-    margin-left: 200px;
+    margin-top:  30px;
+    /* margin-left: 100px; */
+    padding: 180px;
 }
 .box2{
 margin-left: 54px;
@@ -92,7 +97,11 @@ margin-right: 50px;
 
 }
 .boxs .box2 img{
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 20.20));
+    filter: drop-shadow(10px 9px 49px rgba(29, 60, 29, 47.1));
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     height: 650px;
+    
 }
 .box1 span{
    color: rgb(255, 158, 12); 
@@ -104,9 +113,9 @@ margin-right: 50px;
     font-family: 'Noto Sans', sans-serif;
 }
 .box1 p{
-    color: rgb(90, 86, 86);
+    color: rgb(14, 12, 12);
     font-size: 1.2rem;
-    font-weight: 200;
+    font-weight: 300;
     font-family: 'Lato', sans-serif;
 }
 .box1 .btn{
@@ -455,10 +464,10 @@ form input, form textarea{
     width: 100%;
     border: 0;
     outline: none;
-    background: #c8b8b8;
+    background: #f3eaea;
     padding: 10px;
     margin: 8px 0;
-    color: #fff;
+    color: #262424;
     font-size: 18px;
     border-radius: 6px;
 }
