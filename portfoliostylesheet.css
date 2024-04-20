@@ -97,6 +97,7 @@ margin-right: 50px;
 
 }
 .boxs .box2 img{
+    mask-image: linear-gradient(to bottom, #000000 50%, transparent 98%);
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 20.20));
     filter: drop-shadow(10px 9px 49px rgba(29, 60, 29, 47.1));
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
