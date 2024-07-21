@@ -1,0 +1,571 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.Nav-Bar {
+    border: 2px solid black;
+    background-image: url(image/arrow2.svg);
+    background-color: rgba(249, 231, 231, 0.884);
+    width:98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh;
+    gap: 4rem;
+    top: 0px;
+    /* position: relative; */
+    z-index: 1;
+    position: fixed;
+}
+
+.Nav-Bar a {
+    font-size: 2.8vh;
+    color: black;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+.Nav-Bar a:hover{
+    background-color: #482741;
+    color: rgb(249, 249, 249);
+    transform: scale(1);
+}
+
+.logos {
+    margin-top: 10px;
+    margin-left: -7px;
+}
+
+.logos i {
+    text-decoration: none;
+    color:rgba(250, 235, 215, 0.866);
+    padding: 8px;
+    font-size: 1.3rem;
+    transition: transform 0.5s;
+}
+
+.logos i:hover {
+    transform: scale(1.1);
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: #60BAFA;
+}
+
+.box {
+    background-image: url(image/banner-bg.png); 
+    position: relative; /* Added to position box1 absolutely */
+    padding: 0 5%;
+    display: flex;
+    top: 82px;
+    justify-content: space-between;
+    gap: 2%;
+    width: 90%;
+    height: 35rem;
+}
+
+.box1 {
+    margin-top:200px;
+    margin-left:50px
+}
+
+.box1 h1 {
+    font-size: 4vw;
+    color: rgba(250, 235, 215, 0.873);
+}
+
+.box1 p {
+    font-size: 1.5vw;
+    color: rgba(250, 235, 215, 0.837);
+}
+span{
+    color: #60BAFA;
+}
+
+.box2 {
+    margin-right: -50px;
+    margin-top: 36px;
+
+}
+
+.box2 img {
+    width: 100%;
+    margin-top: -61px;
+    height: 550px;
+    mask-image: linear-gradient(to bottom, #000000 50%, transparent 98%);
+    filter: drop-shadow(10px 9px 49px rgba(29, 60, 29, 0.47));
+}
+#HeadingH2Tag{
+    margin-top: 130px;
+    margin-left: 140px;
+    font-family: 'Noto Sans', sans-serif;
+}
+.AboutMe{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 250px;
+    box-shadow:1px 2px 48px 7px rgb(16, 14, 13);
+    border-radius: 15px;
+    background: rgb(74,40,65);
+    background: linear-gradient(90deg, rgba(99,50,76,53) 40%, rgba(41,43,94,43) 123%);
+}
+.aboutmeimg img{
+   margin: 10px 10px;
+   width: 25vw;
+   height: 33vw;
+   border-radius: 15px;
+}
+.aboutmeinfo{
+    margin: 10px 50px;
+    background-color: transparent;
+}
+.headingsection{
+   margin-top: 90px;
+   font-size: 40px;
+   color: #ffffffe2;
+}
+.subheadingsection{
+    margin: 20px 0px;
+    font-size: 20px;
+   color: #ffffffde;
+
+}
+.parasection{
+    font-size: 15px;
+    margin: 10px 0px;
+   color: #cfcdcdda;
+
+}
+
+
+
+
+.mainSection{
+   background-image: url(image/color-sharp.png);
+   background-repeat: no-repeat;
+   height: 100vh;
+}
+.Coding_profiles{
+    padding: 12px;
+    display: flex;
+    width: 78%;
+    margin-left: 230px;
+}
+.Coding_CP{
+  margin: 35px;
+  padding: 40px 60px;
+  background: rgb(74,40,65);
+background: linear-gradient(90deg, rgba(74,40,65,1) 29%, rgba(44,36,78,1) 99%);
+  border-radius: 20px;
+  box-shadow: 6px 6px 20px 1px;
+  transition: transform 0.5s;
+}
+.Coding_CP img{
+    width: 50px;
+    height: 50px;
+}
+.Coding_CP:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.btn{
+    display: block;
+    margin-top:10px;
+    width: fit-content;
+    padding: 10px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    background: linear-gradient(90deg, rgba(99,50,76,53) 40%, rgba(41,43,94,43) 123%);
+    color: #ffffff;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500px;
+    transition: transform 0.8s; 
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+
+
+/* ---------------------------- My Work start ---------------- */
+#portfolio{
+    width: 74%;
+    margin-top: 70px;
+    margin-left: 155px;
+    margin-right: 150px
+}
+#portfolio .work h1{
+    font-family: 'Noto Sans', sans-serif;
+    margin-bottom: 5px;
+    color: #fff;
+
+}
+#portfolio .work p{
+    font-size: 1.1rem;
+    color: rgb(220, 206, 206);
+    font-family: 'Lato', sans-serif;
+    
+}
+
+#portfolio .subtitle{
+    font-size: 3.3rem;
+    font-family: 'Noto Sans', sans-serif;
+    margin-left: 10px;
+    margin-bottom: 8px;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    box-shadow:5px 4px 2px 1px rgb(69, 66, 63);
+
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 78%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.work-btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 10px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500px;
+}
+.work-btn:hover{
+    background-color: #ff004f;
+}
+
+
+/* ---------------------------- My Work  end ---------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------Contactme start------------------------- */
+
+#contact-form{
+    background-image: url(image/footer-bg.png);
+}
+ 
+#contact-form .subtitle{
+    font-size: 3.3rem;
+    font-family: 'Noto Sans', sans-serif;
+    margin-left: 30px;
+    margin-bottom: 8px;
+    color: rgba(250, 235, 215, 0.751);
+}
+#contact-form .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.row.Second-row{
+    margin-left: 90px;
+}
+.first-row{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.first-row p{
+    margin-left: 40px;
+    margin-top: 30px;
+    color: rgba(250, 235, 215, 0.889);
+}
+.first-row p i{ 
+    color: #ff004f;
+    margin-right:15px;
+    font-size: 25px;
+}
+.contact-icon{
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.contact-icon a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color:rgba(250, 235, 215, 0.708);
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.contact-icon a:hover{
+    color: #ff004f;
+    transform: translate(-5px);
+}
+.Second-row{
+    margin-top: 40px;
+  }
+.Second-row form{
+    
+    width: 100%;
+    margin-top: 10px;
+}
+.Second-row .btn{
+    font-size: 1.2rem;
+    /* color: #60BAFA; */
+    background-color: #1177c08a ;
+    color: white;
+    border-radius: 5px;
+    padding: 15px 18px;
+    margin: 15px 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+.Second-row .btn:hover{
+  background-color: #305726;
+}
+
+form input, form textarea{
+    width: 89%;
+    border: 0;
+    outline: none;
+    background: #f1eeee;
+    padding: 10px;
+    margin: 8px 0;
+    color: #000000;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.copyright{
+    width: 95%;
+    font-size: 18px;
+    text-align: center;
+    padding: 25px;
+    margin-top: 20px;
+
+    color: rgb(94, 91, 91);
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+}
+.copyright i{
+    color: #ff004f;
+    padding: 6px;
+}
+#msg{
+    font-size: 25px;
+    color: #4ba93a;
+    margin-top: 2px;
+    display: block;
+}
+
+
+
+/* ------------------------Contactme end--------------------------------- */
+
+/* Media Queries for Responsiveness */
+@media (max-width: 368px){
+    .Nav-Bar a{
+        padding: 10px;
+        font-size: 2.8rem;
+    }
+}
+@media (max-width: 768px) {
+    .box {
+        top: 52px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .box1 {
+        position: absolute; /* Make the box1 position absolute */
+        top: 40%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        /* background: rgba(255, 255, 255, 0.8); Optional: Add a background for better readability */
+        padding: 0px; /* Optional: Add some padding */
+        width: 90%;
+    }
+    .Nav-Bar a {
+        font-size: 4vw;
+        color: black;
+        margin-right: 2vw;
+    }
+    .Nav-Bar {
+        width: 91%;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding: 2vh;
+        gap: 3rem; /* Adjust the gap to your preference */
+    }
+    .box1 h1 {
+        font-size: 9vw;
+        color: rgba(240, 248, 255, 0.929);
+    }
+    
+    .box1 p {
+        font-size: 3.6vw;
+        color: rgba(240, 248, 255, 0.779);
+    }
+    .logos i{
+        color: rgba(240, 248, 255, 0.779);
+    }
+    .box2 {
+        margin-right: 0px;
+    }
+
+    .box2 img {
+        margin-top: 0;
+        height: auto;
+        width: 100%;
+
+    }
+    .btn{
+        margin-left: 75px;
+    }
+
+    .Coding_profiles{
+        flex-direction: column;
+        width: 64%;
+        margin-left: 50px;
+    }
+    .Coding_CP{
+      margin: 35px;
+      padding: 10px 60px;
+      background-color: #482741;
+      border-radius: 20px;
+      box-shadow: 6px 6px 20px 1px;
+    }
+    .AboutMe{
+        padding: 20px;
+        margin-left: 60px;
+        width: 60%;
+        margin-bottom: -90px;
+    }
+
+
+
+/* ------------------------------------ Title responsive -------------------------------------- */
+    #HeadingH2Tag{
+        margin-top:100px;
+        margin-left: 45px;
+        font-size: 25px;
+    }
+/* ------------------------------------ Title responsive end -------------------------------------- */
+
+
+#portfolio{
+    margin-top: 50px;
+    margin-left: 48px;
+    margin-right: 150px
+}
+
+
+
+/* ----------------------------------- Contact Responsive ------------------------------------- */
+    #contact-form {
+        margin-top: -11px;
+        /* margin-left: 10px;
+        margin-right: 20px; */
+        padding: 10px;
+      }
+      
+      .row.Second-row {
+        margin-left: 0;
+      }
+      
+      .first-row p,
+      .contact-icon {
+        margin-left: 0;
+      }
+
+      .Second-row form {
+        margin-left: 0;
+      }
+      .copyright {
+        font-size: 14px;
+        padding: 10px;
+      }
+      
+      .copyright i {
+        padding: 2px;
+      }
+      #contact-form .subtitle{
+        font-size: 1.8rem;
+        font-family: 'Noto Sans', sans-serif;
+        margin-left: 0px;
+        margin-bottom: 8px;
+    }
+    .contact-icon a{
+        font-size: 20px;
+    }
+    .first-row{
+        margin-left: 10px;
+        margin-top: 50px;
+    }
+    
+/* ----------------------------------- Contact Responsive  end ------------------------------------- */
+}
